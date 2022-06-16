@@ -9,7 +9,7 @@ const pool = new Pool({
   database: 'fs-info-db',
   password: '123',
   port: 5432,
-  "max": 20, // Max 20 connection
+  "max": 40, // Max 20 connection
   "connectionTimeoutMillis" : 0, // if all the connection are busy, "0" means "wait forever" (we can change it to shorter time)
   "idleTimeoutMillis": 0, // this destroy the connection if it is no use. "0" means never - but we can set any other number and it will be in seconds
 })
